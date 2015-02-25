@@ -6,16 +6,7 @@ import random
 def getname(idx):
   suf = ''
   if idx < 10:
-    suf += '00'
-  elif idx < 100:
-    suf += '0'
-  suf += str(idx)
-  return 'img_' + suf + '.jpg'
-
-if __name__ == '__main__':
-  infolder = 'D:/_ocr11/logo_negative/images_selected'
-  oufolder = 'D:/_ocr11/logo_negative/logo_neg'
-  glob_idx = 0
+    suf += '00
   files = os.listdir(infolder)
   random.shuffle(files)
   for f in files:
